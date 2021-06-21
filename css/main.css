@@ -1,0 +1,118 @@
+:root{ /* Vai criar uma variável que você pode chamar a qualquer momento no código */
+    --vermelho:#E50914; 
+    --preto:#141414;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Elementos base*/
+
+body{
+    background: var(--preto); /* Uso da variável definida no :root */
+    font-family: 'Arial', Times, serif;
+    color:white;
+
+}
+
+header .container{
+    display:flex; /* Flexbox, vai alinhar os itens em tela. */
+    flex-direction: row;
+    align-items: center; /* Vai mover os menus de baixo para o lado. */
+    justify-content: space-between; 
+
+}
+
+header .logo{
+    /*color: var(--vermelho); -- Caso queira colocar por fonte e escrito.
+    font-family: 'Arial Black', Times;
+    font-size: 40px;*/
+    width: 90px;
+    margin: 5px
+    
+
+    
+}
+header nav a{ 
+    text-decoration: none; /* tira o subilinhado dos botões do nav a */
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /* Toda vez que o mouse passar em cima vai mudar a cor */
+    color:#fff
+}
+
+/*filme pricipal*/
+
+.filme{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/monkcapa.jpg); /* linear-gradient melhorarará a visualização do texto, melhorando o contraste */
+    background-repeat: no-repeat;
+    
+    height: 400px;
+    background-size:cover;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+
+    
+}
+.filme .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.filme .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+.button{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+
+    padding: 15px 30px;
+    margin-right: 15px; 
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all; /* Vai suavisar a transição feita no button:hover por 3s melhorando experiência do usuário. */
+         
+
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.button i{ /* Afastamento dos icones no botão */
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+
+}
+
+.filme .container{ /* Vai fazer com que o container da classe filme não fique ruim ao reduzir o tamanho. */
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor:pointer;
+
+}
+.carrossel{
+    margin-top: 5px;
+}
