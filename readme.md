@@ -1,6 +1,12 @@
 ## :computer: CLONE PÁGINA NETFLIX
 
+```
 
+```
+
+### Layout do Projeto
+
+### ![image-20210621152608468](/img/captura.png)
 
 ### ℹ️ Sobre:
 
